@@ -7,6 +7,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,7 +23,9 @@ import com.mahmud.quizapp.viewmodel.QuizListViewModel;
 
 import java.util.List;
 
-public class ListFragment extends Fragment {
+public class ListFragment extends Fragment implements QuizListAdapter.OnQuizListItemClicked {
+
+    private NavController navController;
 
     private RecyclerView listView;
 
@@ -46,8 +50,10 @@ public class ListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        navController = Navigation.findNavController(view);
+
         listView = view.findViewById(R.id.list_view);
-        quizListAdapter = new QuizListAdapter();
+        quizListAdapter = new QuizListAdapter(this);
 
         listView.setLayoutManager(new LinearLayoutManager(getActivity()));
         listView.setHasFixedSize(true);
@@ -66,5 +72,12 @@ public class ListFragment extends Fragment {
                 quizListAdapter.notifyDataSetChanged();
             }
         });
+    }
+
+    @Override
+    public void onItemClicked(int position) {
+        ListFragmentDirections.ActionListFragmentToDetailsFragment action = ListFragmentDirections.actionListFragmentToDetailsFragment();
+        action.setPosition(position);
+        navController.navigate(R.id.action_listFragment_to_detailsFragment);
     }
 }
