@@ -1,11 +1,17 @@
 # Quiz-App---Firestore-with-Android-MVVM-Architecture
 In this tutorial, we will be building a very simple quiz app which will take data from Firebase Firestore using Android MVVM Architecture.
-<<<<<<< HEAD
-=======
+[Vedio Tutorial](https://www.youtube.com/playlist?list=PLGCjwl1RrtcRHKAa0pCTod1ziFb5hdyJT)
+
+#### TVAC Studio
+[TVAC Studio](https://www.youtube.com/c/TVACStudio) basically for Mobile Development. This Channel if Vary useful for Mobile developer.
 
 
-### Part-3 , Part-4 and Part-5
-* Working with ListFragment
-* Creating and configure MVVM model for Firestore data fetch
-* Image Load from Firestore by Glide
->>>>>>> Part-8_&_Part-9_&_Part-10
+
+This Tutorial we will learn:
+* MVVM Architecture
+* Navigation
+* Bacis Animation
+* Custom Drawable
+* Firbase Anonymous Authentication
+* Firebase Firestore
+* Image Load via Glide
