@@ -8,15 +8,32 @@
     android:background="@drawable/dark_bg">
 
 
-    <ImageView
-        android:id="@+id/list_image"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_card"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placeholder_image" />
+        app:cardBackgroundColor="@color/colorDark"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/placeholder_image" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        app:layout_constraintEnd_toEndOf="@+id/image_card"
+        app:layout_constraintStart_toStartOf="@+id/image_card"
+        app:layout_constraintBottom_toBottomOf="@+id/image_card"
+        android:background="@drawable/image_cover"
+        android:layout_width="0dp"
+        android:layout_height="56dp"/>
 
     <TextView
         android:id="@+id/list_title"
@@ -29,12 +46,13 @@
         android:textColor="@color/colorPrimary"
         android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_image" />
+        app:layout_constraintTop_toBottomOf="@+id/image_card" />
 
     <TextView
         android:id="@+id/list_desc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:maxLines="4"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/work_sans"
