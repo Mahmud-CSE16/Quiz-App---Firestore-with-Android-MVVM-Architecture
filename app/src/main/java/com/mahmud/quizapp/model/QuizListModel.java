@@ -11,7 +11,8 @@ public class QuizListModel {
     public QuizListModel() {
     }
 
-    public QuizListModel(String name, String desc, String image, String level, String visibility, int questions) {
+    public QuizListModel(String id, String name, String desc, String image, String level, String visibility, int questions) {
+        this.id = id;
         this.name = name;
         this.desc = desc;
         this.image = image;

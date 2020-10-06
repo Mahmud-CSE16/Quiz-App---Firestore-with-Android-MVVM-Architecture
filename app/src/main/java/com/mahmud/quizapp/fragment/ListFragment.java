@@ -78,6 +78,6 @@ public class ListFragment extends Fragment implements QuizListAdapter.OnQuizList
     public void onItemClicked(int position) {
         ListFragmentDirections.ActionListFragmentToDetailsFragment action = ListFragmentDirections.actionListFragmentToDetailsFragment();
         action.setPosition(position);
-        navController.navigate(R.id.action_listFragment_to_detailsFragment);
+        navController.navigate(action);
     }
 }

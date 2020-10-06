@@ -23,7 +23,7 @@ public class FirebaseRepository {
     }
 
     public void getQuizData(){
-        quizRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        quizRef.whereEqualTo("visibility","public").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if(task.isSuccessful()){
