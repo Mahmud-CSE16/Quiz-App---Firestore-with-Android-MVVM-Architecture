@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,6 +32,7 @@ public class DetailsFragment extends Fragment {
 
     private TextView detailsTitle, detailsDesc, detailsDiff, detailsQuestions;
     private ImageView detailsCoverImage;
+    private Button detailsStartBtn;
 
 
     public DetailsFragment() {
@@ -57,6 +59,16 @@ public class DetailsFragment extends Fragment {
         detailsDesc = view.findViewById(R.id.details_desc);
         detailsDiff = view.findViewById(R.id.details_difficulty_text);
         detailsQuestions = view.findViewById(R.id.details_questions_text);
+        detailsStartBtn = view.findViewById(R.id.details_start_btn);
+
+        detailsStartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DetailsFragmentDirections.ActionDetailsFragmentToQuizFragment action = DetailsFragmentDirections.actionDetailsFragmentToQuizFragment();
+                action.setPosition(position);
+                navController.navigate(R.id.action_detailsFragment_to_quizFragment);
+            }
+        });
 
     }
 
