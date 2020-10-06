@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "171428454842",
+    "firebase_url": "https://flash-chat-7142f.firebaseio.com",
+    "project_id": "flash-chat-7142f",
+    "storage_bucket": "flash-chat-7142f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171428454842:android:af791e22b7f71875a6bd83",
+        "android_client_info": {
+          "package_name": "co.mahmud.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfUvU1tb4kCPiuXNCNkxKsW__wKUsuu3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171428454842:android:4d7a6503f0ad6b02a6bd83",
+        "android_client_info": {
+          "package_name": "com.example.flutter_local_notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171428454842-08ueui2kgm73coc355ebn09bmpqa3i2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_local_notification",
+            "certificate_hash": "4de2cb2f2436df52cef476a35802f09313f0f38f"
+          }
+        },
+        {
+          "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfUvU1tb4kCPiuXNCNkxKsW__wKUsuu3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171428454842:android:ec34aeb696711131a6bd83",
+        "android_client_info": {
+          "package_name": "com.mahmud.firebasefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfUvU1tb4kCPiuXNCNkxKsW__wKUsuu3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171428454842:android:3f7190dd0eb155faa6bd83",
+        "android_client_info": {
+          "package_name": "com.mahmud.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfUvU1tb4kCPiuXNCNkxKsW__wKUsuu3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171428454842-2h511f1mtesik608csn1m7evf0gp2cfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
